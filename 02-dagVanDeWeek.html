@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var vandaag = new Date();
+      var dagen = new Array(7);
+      dagen[0] = "zondag";
+      dagen[1] = "maandag";
+      dagen[2] = "dinsdag";
+      dagen[3] = "woensdag";
+      dagen[4] = "donderdag";
+      dagen[5] = "vrijdag";
+      dagen[6] = "zaterdag";
+
+      var dag = dagen[vandaag.getDay()];
+
+      document.write("het is " + dag + ".");
+
+      if (
+        dag == "maandag" ||
+        "dinsdag" ||
+        "woensdag" ||
+        "donderdag" ||
+        "vrijdag"
+      ) {
+        document.write(
+          "<p>Het is " + dag + ", het is een werkdag, aan de slag dus!</p>"
+        );
+      } else if (dag == "zaterdag" || "zondag") {
+        document.write(
+          "<p>Het is " + dag + ", het is weekend, even bekomen.</p>"
+        );
+      }
+    </script>
+  </body>
+</html>
