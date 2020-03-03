@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var voornaam = "Wout";
+      var achternaam = "Troch";
+      var volledigenaam = voornaam + " " + achternaam;
+
+      document.write("Hallo " + volledigenaam + ".");
+
+      var naamlengte = voornaam.length + achternaam.length;
+
+      document.write("<br>Jouw naam bevat " + naamlengte + " karakters.");
+
+      var filename = "JavaScriptFrameWork";
+
+      document.write("<br> De originele filename is '" + filename + "'.");
+
+      document.write(
+        "<br>De filename kan beter in kleine letters getypt worden, dus '" +
+          filename.toLowerCase() +
+          "'."
+      );
+
+      var javascript = filename.substring(0, 10);
+      var framework = filename.substring(10, 19);
+
+      document.write(
+        "<br>Als je '" +
+          filename.toLowerCase() +
+          "' opsplitst, krijg je : '" +
+          javascript.toLowerCase() +
+          "' en '" +
+          framework.toLowerCase() +
+          "'."
+      );
+
+      var karakter = filename.charAt(5);
+      document.write(
+        "<br>Het zesde karakter (volgens mensen) in '" +
+          filename.toLowerCase() +
+          "' is: '" +
+          karakter +
+          "'."
+      );
+    </script>
+  </body>
+</html>
