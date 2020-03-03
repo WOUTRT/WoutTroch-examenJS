@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function CnaarF(celsius) {
+        celsius = prompt("hoeveel graden celsius wilt u omzetten");
+        var CnaarF = (celsius * 9) / 5 + 32;
+        return alert(celsius + "°C is " + CnaarF + "°F");
+      }
+      function FnaarC(fahrenheit) {
+        fahrenheit = prompt("hoeveel graden Fahrenheit wilt u omzetten");
+        var FnaarC = ((fahrenheit - 32) * 5) / 9;
+        return alert(fahrenheit + "°F is " + FnaarC + "°C");
+      }
+    </script>
+    <button onclick="CnaarF()">omzetten C naar F</button>
+    <button onclick="FnaarC()">omzetten F naar C</button>
+  </body>
+</html>
