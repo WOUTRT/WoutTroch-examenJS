@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+
+  <body>
+    <script>
+      var zin1 = zin1;
+      function vervangWoord(zin1, woord1, woord2) {
+        if (zin1.indexOf(woord1) != -1) {
+          deel1 = zin1.substr(0, zin1.indexOf(woord1)) + woord2;
+          deel2 = zin1.substring(
+            zin1.indexOf(woord1) + woord1.length,
+            zin1.length
+          );
+          zin1 = deel1 + deel2;
+          document.write(zin1)
+        }else (zin1.indexOf(woord1) == -1) 
+        {
+            document.write("dit woord is niet gevonden!")
+        }
+
+        }
+    </script>
+    <form name="vervang">
+      <h4>Zin:</h4>
+
+      <input type="text" name="zin1" />
+
+      <h4>zoek dit woord:</h4>
+      <input type="text" name="woord1" />
+
+      <h4>dit woord komt in de plaats:</h4>
+      <input type="text" name="woord2" />
+
+      <input type="button" value="vervang" onclick="vervangWoord()" />
+
+      <h4>de nieuwe zin</h4>
+
+      <input name="resultaat" size="50"></input>
+    </form>
+  </body>
+</html>
